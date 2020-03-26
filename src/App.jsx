@@ -18,7 +18,6 @@ function App() {
           <Styled.ClassButton>Study Hall</Styled.ClassButton>
         </Styled.ClassList>
       </Styled.Body>
-      <Styled.Footer></Styled.Footer>
     </Styled.Page>
   );
 }

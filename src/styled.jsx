@@ -26,14 +26,8 @@ export const Header = styled.div`
     background-color: #82A586;
 `;
 
-export const Footer = styled.div`
-    min-height: 20vh;
-    min-width: 100vw;
-    background-color: #82A586;
-`;
-
 export const Body = styled.div`
-    min-height: 60vh;
+    min-height: 80vh;
     min-width: 100vw;
     background-color: #EEEFEB;
     display: flex;
