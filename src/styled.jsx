@@ -32,6 +32,7 @@ export const Body = styled.div`
     background-color: #EEEFEB;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 `;
 
 export const ClassList = styled.div`
@@ -39,13 +40,12 @@ export const ClassList = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
-    align-items: flex-start;
-    max-width: 80vw;
+    align-items: center;
+    flex-grow: 1;
 `;
 
-export const ClassListHeader = styled.div`
+export const SectionHeader = styled.div`
     font-size: 24pt;
-    align-self: center;
     margin: 16px 0px 4px;
 `;
 
@@ -71,4 +71,65 @@ export const ClassButton = styled.button`
         background-color: #436252;
         color: white;
     }
+`;
+
+export const Options = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 10;
+    flex-wrap: wrap;
+`;
+
+export const Section = styled.div`
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-direction: column;
+`;
+
+export const Subsection = styled.div`
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-around;
+`;
+
+export const FuncButton = styled.button`
+    font-family: inherit;
+    height: 64px;
+    max-width: 60%;
+    flex-grow: 1;
+    background-color: ${props => props.active ? '#EEEFEB' : '#436252'};
+    color: ${props => props.active ? '#436252' : '#EEEFEB'};
+    padding: 4px 8px 8px;
+    margin: 4px;
+    border: 1px solid #436252;
+    border-radius: 5px;
+    font-size: 16pt;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        background-color: white;
+        color: #436252;
+    }
+    &:active {
+        background-color: #436252;
+        color: white;
+    }
+`;
+
+export const Output = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 10;
+    margin: 16px 0px;
+`;
+
+export const OutputLine = styled.div`
+
 `;
