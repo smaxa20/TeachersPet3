@@ -29,7 +29,7 @@ export const Header = styled.div`
 export const Footer = styled.div`
     min-height: 20vh;
     min-width: 100vw;
-    background-color: #436252;
+    background-color: #82A586;
 `;
 
 export const Body = styled.div`
