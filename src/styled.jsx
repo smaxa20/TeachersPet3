@@ -65,17 +65,17 @@ export const ClassButton = styled.button`
     border: 1px solid ${green4};
     border-radius: 5px;
     font-size: 12pt;
-    cursor: pointer;
+    cursor: ${props => props.active || 'pointer'};
     &:focus {
         outline: 0;
     }
     &:hover {
-        background-color: white;
+        background-color: ${props => props.active || 'white'};
         color: ${green4};
     }
     &:active {
-        background-color: ${green4};
-        color: white;
+        background-color: ${props => props.active || green4};
+        color: ${props => props.active || 'white'};
     }
 `;
 
