@@ -10,6 +10,12 @@ import styled from 'styled-components';
 • rgb(130,165,134)   #82A586
 • rgb(67,98,82)      #436252
 */
+const white1 = '#EEEFEB';
+const white2 = '#DFE6D9';
+const green1 = '#D9DFC6';
+const green2 = '#B8CCAF';
+const green3 = '#82A586';
+const green4 = '#436252';
 
 export const Page = styled.div`
     font-family: serif;
@@ -23,13 +29,13 @@ export const Page = styled.div`
 export const Header = styled.div`
     min-height: 20vh;
     min-width: 100vw;
-    background-color: #82A586;
+    background-color: ${green3};
 `;
 
 export const Body = styled.div`
     min-height: 80vh;
     min-width: 100vw;
-    background-color: #EEEFEB;
+    background-color: ${white1};
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -52,11 +58,11 @@ export const SectionHeader = styled.div`
 export const ClassButton = styled.button`
     font-family: inherit;
     width: 200px;
-    background-color: ${props => props.active ? '#EEEFEB' : '#436252'};
-    color: ${props => props.active ? '#436252' : '#EEEFEB'};
+    background-color: ${props => props.active ? white1 : green4};
+    color: ${props => props.active ? green4 : white1};
     padding: 4px 8px 8px;
     margin: 4px;
-    border: 1px solid #436252;
+    border: 1px solid ${green4};
     border-radius: 5px;
     font-size: 12pt;
     cursor: pointer;
@@ -65,10 +71,10 @@ export const ClassButton = styled.button`
     }
     &:hover {
         background-color: white;
-        color: #436252;
+        color: ${green4};
     }
     &:active {
-        background-color: #436252;
+        background-color: ${green4};
         color: white;
     }
 `;
@@ -101,11 +107,11 @@ export const FuncButton = styled.button`
     height: 64px;
     max-width: 60%;
     flex-grow: 1;
-    background-color: ${props => props.active ? '#EEEFEB' : '#436252'};
-    color: ${props => props.active ? '#436252' : '#EEEFEB'};
+    background-color: ${props => props.active ? white1 : green4};
+    color: ${props => props.active ? green4 : white1};
     padding: 4px 8px 8px;
     margin: 4px;
-    border: 1px solid #436252;
+    border: 1px solid ${green4};
     border-radius: 5px;
     font-size: 16pt;
     cursor: pointer;
@@ -114,10 +120,10 @@ export const FuncButton = styled.button`
     }
     &:hover {
         background-color: white;
-        color: #436252;
+        color: ${green4};
     }
     &:active {
-        background-color: #436252;
+        background-color: ${green4};
         color: white;
     }
 `;
